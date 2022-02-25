@@ -10,12 +10,12 @@ $age = $_GET['age'] ?? '';
 
 $length_name = strlen($name);
 
-
+/* 
 if($length_name > 3 && (strpos($mail,'@') && strpos($mail,'.')) && is_numeric($age) ){
     echo 'Accesso Riuscito';
 } else {
     echo 'Accesso Negato';
-}
+} */
 
 ?>
 <!DOCTYPE html>
@@ -34,10 +34,15 @@ if($length_name > 3 && (strpos($mail,'@') && strpos($mail,'.')) && is_numeric($a
   <input type="email" name="mail"><br><br>
   <label for="fname">Inserisci la tua età:</label>
   <input type="text" name="age" ><br><br>
-  <button type="submit">Invia</button>
-
-  
+  <button type="submit">Invia</button>  
 </form>
+
+<?php if($length_name > 3 && (strpos($mail,'@') && strpos($mail,'.')) && is_numeric($age)) : ?>
+    <p>Accesso Riuscito</p>
+<?php else : ?>
+    <p>Accesso Negato</p>
+<?php endif;?>
+
     
     
 </body>
