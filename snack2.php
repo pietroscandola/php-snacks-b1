@@ -58,18 +58,6 @@ for ($i = 0; $i < count($posts); $i++) {
     }
 }
 
-/* for($i=0; $i < count($posts); $i++){
-    echo "$dates[$i]<br>";
-    for($j=0; $j < count($dates); $j++){
-        echo $var[$j].'<br>';
-       
-    }
-} */
-
-
-
-
-
 
 ?>
 <!DOCTYPE html>
