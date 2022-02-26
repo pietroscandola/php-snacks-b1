@@ -46,11 +46,25 @@ $posts = [
 ];
 
 $dates= array_keys($posts);
-foreach($posts as $date) {
-    foreach($date as $key => $val) {
-        echo $key[$i];
+$var = array_keys($dates);
+
+var_dump($dates);
+
+for ($i = 0; $i < count($posts); $i++) {
+    $data_print = $dates[$i];
+    echo "<h1>$data_print</h1>";
+    for ($j=0; $j < count($posts[$data_print]) ; $j++) { 
+        echo $posts[$data_print][$j]['title']. '<br>'. $posts[$data_print][$j]['author'] . '<br>'. $posts[$data_print][$j]['text'].'<br>' ;
     }
 }
+
+/* for($i=0; $i < count($posts); $i++){
+    echo "$dates[$i]<br>";
+    for($j=0; $j < count($dates); $j++){
+        echo $var[$j].'<br>';
+       
+    }
+} */
 
 
 
