@@ -45,7 +45,18 @@ $posts = [
     ],
 ];
 
-var_dump($posts)
+$dates= array_keys($posts);
+foreach($posts as $date) {
+    foreach($date as $key => $val) {
+        echo $key[$i];
+    }
+}
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,11 +67,7 @@ var_dump($posts)
     <title>Snack2</title>
 </head>
 <body>
-    <ul>
-        <?php for($i = 0; $i < count($posts); $i++) : ?>
-            <li><?= $posts[$i] ?></li>
-        <?php endfor; ?>
-    </ul>
+    
     
 </body>
 </html>
