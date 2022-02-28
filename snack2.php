@@ -46,7 +46,7 @@ $posts = [
 ];
 
 $dates= array_keys($posts);
-$var = array_keys($dates);
+
 
 var_dump($dates);
 

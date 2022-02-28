@@ -37,7 +37,7 @@ if($length_name > 3 && (strpos($mail,'@') && strpos($mail,'.')) && is_numeric($a
   <button type="submit">Invia</button>  
 </form>
 
-<?php if($length_name > 3 && (strpos($mail,'@') && strpos($mail,'.')) && is_numeric($age)) : ?>
+<?php if($length_name > 3 && (strpos($mail,'@') !== false && strpos($mail,'.') !== false) && is_numeric($age)) : ?>
     <p>Accesso Riuscito</p>
 <?php else : ?>
     <p>Accesso Negato</p>
